@@ -4,9 +4,9 @@ public class MyCalculator {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         System.out.println("provide the first number"); // requests first number from user
-        double int1 = reader.nextInt();
+        double int1 = Double.parseDouble(reader.nextLine());
         System.out.println("provide the second number"); // requests second number from user
-        double int2 = reader.nextInt();
+        double int2 = Double.parseDouble(reader.nextLine());
 addNumber(int1, int2); // calls on method
 subtractNumber(int1,int2); // calls on method
 multNumber(int1,int2); // calls on method
